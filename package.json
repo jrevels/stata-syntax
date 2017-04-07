@@ -1,0 +1,15 @@
+{
+  "name": "stata-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "An Atom syntax theme inspired by the Julia Lab's space in MIT's Stata Center",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/stata-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

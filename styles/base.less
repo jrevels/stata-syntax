@@ -64,14 +64,14 @@ atom-text-editor .search-results .marker.current-result .region {
 // Syntax styles
 
 .syntax--comment {
-  color: @carpet-light-1;
+  color: @comment;
 }
 
 .syntax--keyword {
-  color: @carpet-light-2;
+  color: @red;
 
   &.syntax--control {
-    color: @carpet-light-2;
+    color: @red;
   }
 
   &.syntax--operator {
@@ -88,34 +88,34 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .syntax--storage {
-  color: @purple;
+  color: @pink;
 }
 
 .syntax--constant {
-  color: @pink;
+  color: @literal;
 
   &.syntax--character.syntax--escape {
-    color: @cyan;
+    color: @literal;
   }
 
   &.syntax--numeric {
-    color: @pink;
+    color: @literal;
   }
 
   &.syntax--other.syntax--color {
-    color: @pink;
+    color: @literal;
   }
 
   &.syntax--other.syntax--symbol {
-    color: @pink;
+    color: @literal;
   }
 }
 
 .syntax--variable {
-  color: @carpet-light-2;
+  color: @red;
 
   &.syntax--interpolation {
-    color: darken(@wood-light-2, 30%);
+    color: @yellow;
     font-style: italic;
   }
 
@@ -125,12 +125,12 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .syntax--invalid.syntax--illegal {
-  background-color: @carpet-light-2;
+  background-color: @red;
   color: @syntax-background-color;
 }
 
 .syntax--string {
-  color: @wood-light-2;
+  color: @yellow;
 
 
   &.syntax--regexp {
@@ -141,15 +141,15 @@ atom-text-editor .search-results .marker.current-result .region {
     }
   }
 
-  &.syntax--other.syntaxcarpet-light-1 {
-    color: @carpet-light-2;
+  &.syntax--other.syntax--link {
+    color: @red;
   }
 }
 
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
-      color: @carpet-light-1;
+      color: @comment;
     }
 
     &.syntax--variable,
@@ -169,13 +169,13 @@ atom-text-editor .search-results .marker.current-result .region {
     }
 
     &.syntax--italic {
-      color: @purple;
+      color: @pink;
       font-style: italic;
     }
   }
 
   &.syntax--section.syntax--embedded {
-    color: darken(@carpet-light-2, 10%);
+    color: darken(@red, 10%);
   }
 
 }
@@ -219,7 +219,7 @@ atom-text-editor .search-results .marker.current-result .region {
   }
 
   &.syntax--name.syntax--tag {
-    color: @carpet-light-2;
+    color: @red;
     text-decoration: underline;
   }
 
@@ -246,7 +246,7 @@ atom-text-editor .search-results .marker.current-result .region {
   }
 
   &.syntax--selector {
-    color: @purple;
+    color: @pink;
   }
 
   &.syntax--separator {
@@ -261,20 +261,20 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .syntax--markup {
   &.syntax--bold {
-    color: @wall-light;
+    color: @white;
     font-weight: bold;
   }
 
   &.syntax--changed {
-    color: @purple;
+    color: @pink;
   }
 
   &.syntax--deleted {
-    color: @carpet-light-2;
+    color: @red;
   }
 
   &.syntax--italic {
-    color: @purple;
+    color: @pink;
     font-style: italic;
   }
 
@@ -288,7 +288,7 @@ atom-text-editor .search-results .marker.current-result .region {
   }
 
   &.syntax--list {
-    color: @carpet-light-2;
+    color: @red;
   }
 
   &.syntax--quote {

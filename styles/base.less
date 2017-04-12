@@ -68,22 +68,22 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .syntax--keyword {
-  color: @red;
+  color: @keyword;
 
   &.syntax--control {
-    color: @red;
+    color: @keyword;
   }
 
   &.syntax--operator {
-    color: @syntax-text-color;
+    color: @operator;
   }
 
   &.syntax--other.syntax--special-method {
-    color: @blue;
+    color: @keyword;
   }
 
   &.syntax--other.syntax--unit {
-    color: @orange;
+    color: @operator;
   }
 }
 
@@ -134,7 +134,7 @@ atom-text-editor .search-results .marker.current-result .region {
 
 
   &.syntax--regexp {
-    color: @cyan;
+    color: @yellow;
 
     .syntax--source.syntax--ruby.syntax--embedded {
       color: @orange;
